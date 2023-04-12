@@ -53,3 +53,55 @@ print(data)
 
 users.sort() # ordena em ordem alfabética
 print(users) 
+
+nums = [4, 42, 11, 1991]
+nums.reverse() # imprime de trás pra frente
+print(nums)
+
+nums.sort(reverse=True) # reorganiza os valores do maior para o menor e altera a lista original
+print(nums)
+
+print(sorted(nums, reverse=True)) # reorganiza os valores do maior para o menos sem alterar a lista original
+print(nums)
+
+# outra opção é fazer cópias para manipular sem alterar a lista original como nos 3 exemplos abaixo
+numscopy = nums.copy()
+mynums = list(nums)
+mycopy = nums[:] 
+
+print(numscopy)
+print(mynums)
+mycopy.sort()
+print(mycopy)
+print(nums)
+
+print(type(nums))
+
+mylist = list([1, "Neil", True])
+print(mylist)
+
+# TUPLES is almost the same thing as List but the data and order will never change
+
+mytuple = tuple(('Milene', 42, True))
+
+anothertuple = (1,4,2,8,2,2)
+
+print(mytuple)
+print(type(mytuple))
+print(type(anothertuple))
+
+newlist = list(mytuple)
+newlist.append('Neil')
+newtuple = tuple(newlist)
+print(newtuple)
+
+(one, *two, hey) = anothertuple
+print(one)
+print(two)
+print(hey)
+
+print(anothertuple.count(2))
+
+
+
+
